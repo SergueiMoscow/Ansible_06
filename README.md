@@ -12,7 +12,7 @@
 - `. venv/bin/activate && . hacking/env-setup` (находясь в директории со склонированным репозиторием ansible)
 
 ## Основная часть
-- Создаём [файл](my_own_module.yml) с содержимым из [примера](https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html#creating-a-module)
+- Создаём [файл](ansible/lib/modules/my_own_module.py) с содержимым из [примера](https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html#creating-a-module)
 - Располагаем его в `lib/ansible/modules`
 - Пишем параметры в [payload.json](payload.json)
 - Запускаем `python -m ansible.modules.my_own_module payload.json`    
