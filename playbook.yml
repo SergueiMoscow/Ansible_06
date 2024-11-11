@@ -1,0 +1,8 @@
+---
+- name: Test my_own_module
+  hosts: localhost
+  tasks:
+    - name: Call my_own_module
+      my_own_namespace/yandex_cloud_elk.my_own_module:
+        path: '/tmp/test/test1.txt'
+        content: 'content for testing'
